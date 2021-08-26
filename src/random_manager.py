@@ -1,7 +1,8 @@
 from random import randint
 
+from src.interfaces import Manager
 
-class TravelerManager():
+class TravelerManager(Manager):
     def __init__(self):
         self.cities = ["A", "B", "C", "D", "E"]
         self.distances = {

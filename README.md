@@ -15,8 +15,7 @@
 #### To run this on Linux
 
 ```Bash
-    pip3 install virtualenv
-    virtualenv /venv
-    source /venv/bin/activate
-    pip3 install -r requirements.txt
+    pip3 install pipenv
+    pipenv --three
+    pipenv shell
 ```

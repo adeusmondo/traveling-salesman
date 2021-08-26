@@ -1,6 +1,6 @@
 [tool.black]
 line-length = 80
-py37 = true
+py38 = true
 exclude = '''
 /(
     \.git
