@@ -80,7 +80,7 @@ def main():
     Algoritmo Híbrido:   {semi_avg:.2f} KM
 """
     write_in_file("output/avg_algol", avg)
-    draw_boxplot([random_avg, greedy_avg, semi_avg])
+    draw_boxplot([distances_random, distances_greedy, distances_semi_greedy])
 
 
 
