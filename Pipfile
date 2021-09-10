@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 toml = ">=0.10"
+matplotlib = "*"
+numpy = "*"
 
 [dev-packages]
 black = "==21.7b0"
