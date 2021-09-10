@@ -12,8 +12,8 @@ class Manager(ABC):
 
     def load(self):
         results = []
-        with open("../../distancia_entre_capitais_valores.csv") as csvfile:
-            reader = csv.reader(csvfile, demiliter=";", quoting=csv.QUOTE_NONNUMERIC_)
+        with open("data/distancia_entre_capitais_valores.csv") as csvfile:
+            reader = csv.reader(csvfile, delimiter=";", quoting=csv.QUOTE_NONNUMERIC)
             for row in reader:
                 results.append(row)
 
