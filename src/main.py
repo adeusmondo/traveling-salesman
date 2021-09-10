@@ -1,4 +1,5 @@
 import pathlib
+import statistics
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -26,7 +27,8 @@ def remove_files_results():
 def draw_boxplot(avgs):
     fig = plt.figure(figsize =(10, 7))
     ax = fig.add_axes([0, 0, 1, 1])
-    bp = ax.boxplot(avgs)
+    ax.set_title('Caixeiro Viajante - BoxPlot')
+    bp = ax.boxplot(x=avgs, labels=["Randomico", "Guloso", "Híbrido"])
     plt.savefig('output/boxplot.png')
 
 def main():
@@ -78,10 +80,14 @@ def main():
     Algoritmo Aleatório: {random_avg:.2f} KM
     Algoritmo Guloso:    {greedy_avg:.2f} KM
     Algoritmo Híbrido:   {semi_avg:.2f} KM
-"""
-    write_in_file("output/avg_algol", avg)
-    draw_boxplot([distances_random, distances_greedy, distances_semi_greedy])
 
+    - - Desvio Padrão - -
+    Algoritmo Aleatório: {statistics.stdev(distances_random):.2f}
+    Algoritmo Guloso:    {statistics.stdev(distances_greedy):.2f}
+    Algoritmo Híbrido:   {statistics.stdev(distances_semi_greedy):.2f}
+"""
+    write_in_file("output/avg_algol.txt", avg)
+    draw_boxplot([distances_random, distances_greedy, distances_semi_greedy])
 
 
 if __name__ == "__main__":
