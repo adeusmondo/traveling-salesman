@@ -1,0 +1,25 @@
+
+    - - Médias Aritiméticas - -
+    Algoritmo Aleatório: {random_avg:.2f} KM
+    Algoritmo Guloso:    {greedy_avg:.2f} KM
+    Algoritmo Híbrido:   {semi_avg:.2f} KM
+
+    - - Médias Aritiméticas - -
+    Algoritmo Aleatório: 2670.32 KM
+    Algoritmo Guloso:    298.11 KM
+    Algoritmo Híbrido:   1093.54 KM
+
+    - - Médias Aritiméticas - -
+    Algoritmo Aleatório: 3048.00 KM
+    Algoritmo Guloso:    398.82 KM
+    Algoritmo Híbrido:   1070.24 KM
+
+    - - Médias Aritiméticas - -
+    Algoritmo Aleatório: 3155.91 KM
+    Algoritmo Guloso:    328.65 KM
+    Algoritmo Híbrido:   928.85 KM
+
+    - - Médias Aritiméticas - -
+    Algoritmo Aleatório: 2865.50 KM
+    Algoritmo Guloso:    343.57 KM
+    Algoritmo Híbrido:   967.74 KM
