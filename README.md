@@ -14,62 +14,28 @@ Como data set foi utilizado as distâncias entre as capitais do Brasil. Dados di
 
 Este projeto possui três Notebooks, cada um com um dos algoritmos e sua explicação, alem de um micro projeto em Python para permitir executar os algoritmos de forma local, através de uma CLI.
 
-## Como executar o projeto
-
-TODO
-
 ## Metas
-[] Algoritmo Aleatório
-[] Algoritmo Guloso
-[] Algoritmo Híbrido
-[] Cálculo da Média
-[] Desvio Padrão
-[] Comparação entre os algortmos
-[] Plot dos resultados
-[] Mapa com a melhor rota descoberta*
-[] TXT com a melhor rota descoberta*
+- [x] Algoritmo Aleatório
+- [x] Algoritmo Guloso
+- [x] Algoritmo Híbrido
+- [x] Cálculo da Média
+- [x] Desvio Padrão
+- [x] Comparação entre os algortmos
+- [x] Plot dos resultados
+- [] Mapa com a melhor rota descoberta*
+- [] TXT com a melhor rota descoberta*
 
 Esse repositório é um experimento desenvolvido durante as aulas de Introdução a Teoria da Computação
 
-#### To run this project on Windows (if you are using PowerShell)
+## Para executar o projeto
 
-```powerShell
-    pip install virtualenv
-    Set-ExecutionPolicy AllSigned
-    Set-ExecutionPolicy RemoteSigned
-
-    virtualenv .\venv
-    .\venv\scripts\activate
-    pip install -r requirements.txt
-```
-
-#### To run this on Linux
+Estando na pasta do projeto execute os seguintes comandos.
 
 ```Bash
     pip3 install pipenv
     pipenv --three
     pipenv shell
-```
-# Experimenti - Problema do Caixeiro Viajante
-
-Esse repositório é um experimento desenvolvido durante as aulas de Introdução a Teoria da Computação
-
-#### To run this project on Windows (if you are using PowerShell)
-
-```powerShell
-    pip install virtualenv
-    Set-ExecutionPolicy AllSigned
-    Set-ExecutionPolicy RemoteSigned
-
-    virtualenv .\venv
-    .\venv\scripts\activate
-    pip install -r requirements.txt
+    python3 -m src.main
 ```
 
-#### To run this on Linux
-
-```Bash
-    pip3 install pipenv
-    pipenv --three
-    pipenv shell
-```
+Com isso você pode visualizar a pasta graficos onde estão os gráficos de desvio padrão de cada algoritmo.
