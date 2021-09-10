@@ -32,7 +32,7 @@ def main():
     print("Running Traveling Salesman Algorithm - Random...")
     for i in range(30):
         trv_mgr = random.TravelerManager()
-        # trv_mgr.load()
+        trv_mgr.load()
         solution = trv_mgr.solution()
         distances = trv_mgr.calculate_distances(solution)
         distances_random.append(distances)
