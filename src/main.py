@@ -25,33 +25,24 @@ def remove_files_results():
             file_to_rem.unlink()
 
 def draw_boxplot(avgs):
-    #fig = plt.figure(figsize =(10, 7))
-    #ax = fig.add_axes([0, 0, 1, 1])
-    #ax.set_title('Caixeiro Viajante - BoxPlot')
-    #bp = ax.boxplot(x=avgs, labels=["Randomico", "Guloso", "Híbrido"])
-    #plt.savefig('output/boxplot.png')
-    #plt.close()
     font_1 = {'family':'serif', 'color':'#993556'}
     font_2 = {'family':'serif', 'color':'#5C1BCC'}
     font_3 = {'family':'serif', 'color':'000', 'size':12}
 
-    plt.figure(figsize =(10, 7))
-    plt.boxplot(x=avgs, labels=["Randomico", "Guloso", "Híbrido"])
-    plt.axes([0, 0, 1, 1])
-    plt.title('Caixeiro Viajante - BoxPlot')
-    plt.ylabel("Altura")
+    fig = plt.figure(figsize =(15, 10))
+    ax = fig.add_axes([0, 0, 1, 1])
+    tl = ax.set_title('Caixeiro Viajante - BoxPlot')
+    tl = ax.set_ylabel("Distâncias em KM")
 
     for i in range(0, len(avgs)):
-        plt.text(i + 1, min(avgs[i]), '{0:.2f}'.format(min(avgs[i])), fontdict=font_2)
-        plt.text(i + 1, statistics.mean(avgs[i]), '{0:.2f}'.format(statistics.mean(avgs[i])), fontdict=font_1)
+        plt.text(i + 1, min(avgs[i]), '{0:.2f}'.format(min(avgs[i])), fontdict=font_1)
+        plt.text(i + 1, statistics.mean(avgs[i]), '{0:.2f}'.format(statistics.mean(avgs[i])), fontdict=font_2)
         plt.text(i + 1, max(avgs[i]), '{0:.2f}'.format(max(avgs[i])), fontdict=font_1)
 
-    plt.xticks([1, 2, 3], ['R', 'G', 'H'])
-    plt.text(2.8, 1.45, 'R - Randomico\nG - Guloso\nH - Híbrido',
-                               horizontalalignment='left', fontdict=font_3)
+    bp = ax.boxplot(x=avgs, labels=["Randomico", "Guloso", "Híbrido"])
 
     plt.savefig('output/boxplot.png')
-    #plt.close()
+    plt.close()
 
 def main():
     remove_files_results()
