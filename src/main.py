@@ -50,8 +50,8 @@ def draw_boxplot(avgs):
     plt.text(2.8, 1.45, 'R - Randomico\nG - Guloso\nH - Híbrido',
                                horizontalalignment='left', fontdict=font_3)
 
-    plt.savefig('boxplot.png')
-    plt.close()
+    plt.savefig('output/boxplot.png')
+    #plt.close()
 
 def main():
     remove_files_results()
