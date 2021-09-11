@@ -41,7 +41,7 @@ def draw_boxplot(avgs):
 
     bp = ax.boxplot(x=avgs, labels=["Randomico", "Guloso", "Híbrido"])
 
-    plt.savefig('output/boxplot.png')
+    plt.savefig('output/boxplot.png', bbox_inches='tight', dpi=150)
     plt.close()
 
 def main():

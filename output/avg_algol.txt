@@ -1,10 +1,10 @@
 
     - - Médias Aritiméticas - -
-    Algoritmo Aleatório: 2922.57 KM
-    Algoritmo Guloso:    335.58 KM
-    Algoritmo Híbrido:   908.75 KM
+    Algoritmo Aleatório: 2916.99 KM
+    Algoritmo Guloso:    313.04 KM
+    Algoritmo Híbrido:   1031.13 KM
 
     - - Desvio Padrão - -
-    Algoritmo Aleatório: 1201.53
-    Algoritmo Guloso:    346.83
-    Algoritmo Híbrido:   761.62
+    Algoritmo Aleatório: 1373.81
+    Algoritmo Guloso:    352.28
+    Algoritmo Híbrido:   794.73
