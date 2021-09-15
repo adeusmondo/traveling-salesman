@@ -22,8 +22,8 @@ Este projeto possui três Notebooks, cada um com um dos algoritmos e sua explica
 - [x] Desvio Padrão
 - [x] Comparação entre os algortmos
 - [x] Plot dos resultados
-- [] Mapa com a melhor rota descoberta*
-- [] TXT com a melhor rota descoberta*
+- [ ] Mapa com a melhor rota descoberta*
+- [ ] TXT com a melhor rota descoberta*
 
 Esse repositório é um experimento desenvolvido durante as aulas de Introdução a Teoria da Computação
 
